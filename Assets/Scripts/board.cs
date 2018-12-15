@@ -17,14 +17,13 @@ public class board : MonoBehaviour {
 
 	public void Destruct () {
 		foreach (block b in _blocks) {
-			b.Destruct();
+			b.Destruct ();
 		}
 		Destroy (gameObject);
 	}
-	
+
 	private void InitBoard () {
-		for (int i = 0; i != 6; ++i)
-			SpawnBlockRand ();
+		SpawnBlockRand ();
 
 	}
 
